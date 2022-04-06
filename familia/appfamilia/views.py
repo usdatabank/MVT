@@ -5,3 +5,5 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Mensaje de prueba")
     
+def integrante(request):
+  return HttpResponse()
