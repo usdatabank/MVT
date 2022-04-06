@@ -5,4 +5,5 @@ from . import views
 app_name = "appfamilia"
 urlpatterns = [
     path('', views.index, name='index'),
+    path('integrante/', views.integrante, name='integrante'),
 ]
