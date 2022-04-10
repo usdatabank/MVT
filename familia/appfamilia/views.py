@@ -21,7 +21,6 @@ def buscar(request):
 
 def buscar_integrante(request):
   if request.GET['fam']:
-    #mensaje = "Integrante buscado: %r" % request.GET['fam']
     nombre_busca = request.GET['fam']
     intefam = familiares.objects.filter(nombre__icontains=nombre_busca)
     return render(request, "resultado_busqueda.html", {"integrante_familia":intefam, "query": nombre_busca})
