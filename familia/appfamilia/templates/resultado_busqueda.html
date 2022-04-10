@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado busqueda</title>
+</head>
+<body>
+    <h3><strong>Estas buscando: </strong>{{query}}</h3>
+    {% if integrante_familia %}
+        <p>Integrantes encontrado: {{integrante_familia|length}} integrante</p>
+        <ul>
+            {% for persona in integrante_familia %}
+            <li>
+                {{persona.nombre}} &nbsp; {{persona.cumple}}
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p> No es parte de la familia el integrante.</p>
+    {% endif%}
+</body>
+</html>

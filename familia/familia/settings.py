@@ -55,7 +55,7 @@ ROOT_URLCONF = 'familia.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/bastian/CoderHouse/MVT/familia/appfamilia/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrantes</title>
+    <title>Busqueda de Familiar</title>
 </head>
 <body>
-    <h1>Datos del integrante</h1>
-        <p>{{ nombre_persona }}</p>
+    <form action="../buscaintegrante/" method="get">
+        <input type="text" name="fam">
+        <input type="submit" name="buscar">
+    </form>
 </body>
 </html>
